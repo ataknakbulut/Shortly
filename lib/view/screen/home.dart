@@ -83,7 +83,6 @@ class Home extends StatelessWidget {
                                             ['title'],
                                         description: _sqlController
                                             .getDatas()[index]['description'],
-                                        copied: false,
                                       ),
                                     ),
                                   ),

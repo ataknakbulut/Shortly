@@ -12,12 +12,10 @@ class LinkListCard extends StatelessWidget {
     required this.id,
     required this.title,
     required this.description,
-    required this.copied,
   });
 
   final int id;
   final String title, description;
-  bool copied;
 
   @override
   Widget build(BuildContext context) {
@@ -61,20 +59,13 @@ class LinkListCard extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 36.0, vertical: 20.0),
           child: SizedBox(
             width: double.infinity,
-            child: copied == true
-                ? DefaultButton(
-                    backgroundColor: Colors.black,
-                    text: 'COPIED',
-                    onPressed: () => null,
-                  )
-                : DefaultButton(
-                    backgroundColor: kPrimaryColor,
-                    text: 'COPY',
-                    onPressed: () {
-                      FlutterClipboard.copy(description)
-                          .then((value) => copied = true);
-                    },
-                  ),
+            child: DefaultButton(
+              backgroundColor: kPrimaryColor,
+              text: 'COPY',
+              onPressed: () {
+                FlutterClipboard.copy(description);
+              },
+            ),
           ),
         ),
       ],
