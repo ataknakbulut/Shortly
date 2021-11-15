@@ -16,6 +16,39 @@ class Home extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
   final _textFieldController = TextEditingController();
 
+  Future<void> clickButton() async {
+    _formKey.currentState!.validate();
+
+    if (_homeController.getHasError() == false) {
+      Get.dialog(
+        const Center(
+          child: CircularProgressIndicator(
+            valueColor: AlwaysStoppedAnimation<Color>(kPrimaryColor),
+          ),
+        ),
+        barrierDismissible: false,
+      );
+
+      await Services.genereteLink(_textFieldController.text)
+          .then((response) async {
+        if (response.ok) {
+          _sqlController.addItem(
+            _textFieldController.text,
+            '${response.result!.fullShortLink}',
+          );
+          Get.back();
+
+          Get.focusScope!.unfocus();
+        } else {
+          Get.back();
+          Fluttertoast.showToast(
+            msg: '${response.error}',
+          );
+        }
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,19 +73,28 @@ class Home extends StatelessWidget {
                                     padding: const EdgeInsets.only(top: 20.0),
                                     child: SvgPicture.asset(kLogoPath)),
                                 SvgPicture.asset(kIllustrationPath),
-                                if (_sqlController.getLinkCount() == 0)
-                                  Container(
-                                    padding:
-                                        const EdgeInsets.only(bottom: 16.0),
-                                    child: const Text(
-                                      "Let's get started!",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.w900,
-                                        fontSize: 22.0,
-                                      ),
+                                Container(
+                                  padding: const EdgeInsets.only(bottom: 16.0),
+                                  child: const Text(
+                                    "Let's get started!",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w900,
+                                      fontSize: 22.0,
                                     ),
-                                  )
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.only(bottom: 16.0),
+                                  child: const Text(
+                                    "Paste your first link into\n the field to shorten it",
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w900,
+                                      fontSize: 16.0,
+                                    ),
+                                  ),
+                                )
                               ],
                             )
                           : SingleChildScrollView(
@@ -127,6 +169,8 @@ class Home extends StatelessWidget {
                             ),
                             fillColor: Colors.white,
                           ),
+                          textInputAction: TextInputAction.send,
+                          onEditingComplete: () async => await clickButton(),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
                               _homeController.updateShowRedBorder(true);
@@ -157,38 +201,7 @@ class Home extends StatelessWidget {
                           child: DefaultButton(
                             backgroundColor: kPrimaryColor,
                             text: "SHORTEN IT!",
-                            onPressed: () async {
-                              _formKey.currentState!.validate();
-
-                              if (_homeController.getHasError() == false) {
-                                Get.dialog(
-                                  const Center(
-                                    child: CircularProgressIndicator(
-                                      valueColor: AlwaysStoppedAnimation<Color>(
-                                          kPrimaryColor),
-                                    ),
-                                  ),
-                                  barrierDismissible: false,
-                                );
-
-                                await Services.genereteLink(
-                                        _textFieldController.text)
-                                    .then((response) async {
-                                  if (response.ok) {
-                                    _sqlController.addItem(
-                                      _textFieldController.text,
-                                      '${response.result!.fullShortLink}',
-                                    );
-                                    Get.back();
-                                  } else {
-                                    Get.back();
-                                    Fluttertoast.showToast(
-                                      msg: '${response.error}',
-                                    );
-                                  }
-                                });
-                              }
-                            },
+                            onPressed: () async => await clickButton(),
                           ),
                         ),
                       ),
