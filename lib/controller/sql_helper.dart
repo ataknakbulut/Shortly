@@ -21,7 +21,6 @@ class SQLHelper {
     );
   }
 
-  // Create new item (journal)
   static Future<int> createItem(String title, String? descrption) async {
     final db = await SQLHelper.db();
 
@@ -31,13 +30,11 @@ class SQLHelper {
     return id;
   }
 
-  // Read all items (journals)
   static Future<List<Map<String, dynamic>>> getItems() async {
     final db = await SQLHelper.db();
     return db.query('items', orderBy: "id DESC");
   }
 
-  // Delete
   static Future<void> deleteItem(int id) async {
     final db = await SQLHelper.db();
     try {
