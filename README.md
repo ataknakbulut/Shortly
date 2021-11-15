@@ -3,7 +3,6 @@
 ## Kullandığım paketler
 
 * [Get](https://pub.dev/packages/get) (Route&state managment)
-* [string_validator](https://pub.dev/packages/get) (Url doğrulaması)
 * [string_validator](https://pub.dev/packages/string_validator) (Url doğrulaması)
 * [fluttertoast](https://pub.dev/packages/fluttertoast) (Toast mesajı)
 * [http](https://pub.dev/packages/http) (Api bağlantısı)
