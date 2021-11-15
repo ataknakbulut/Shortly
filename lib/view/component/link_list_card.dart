@@ -55,23 +55,26 @@ class LinkListCard extends StatelessWidget {
             ),
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 36.0, vertical: 20.0),
-          child: SizedBox(
-            width: double.infinity,
-            child: _sqlController.isItemCopied(id) == true
-                ? DefaultButton(
-                    backgroundColor: Colors.black,
-                    text: 'COPIED',
-                    onPressed: () => FlutterClipboard.copy(description))
-                : DefaultButton(
-                    backgroundColor: kPrimaryColor,
-                    text: 'COPY',
-                    onPressed: () {
-                      FlutterClipboard.copy(description);
-                      _sqlController.addItemToCopiedList(id);
-                    },
-                  ),
+        Obx(
+          () => Padding(
+            padding:
+                const EdgeInsets.symmetric(horizontal: 36.0, vertical: 20.0),
+            child: SizedBox(
+              width: double.infinity,
+              child: _sqlController.isItemCopied(id) == true
+                  ? DefaultButton(
+                      backgroundColor: Colors.black,
+                      text: 'COPIED',
+                      onPressed: () => FlutterClipboard.copy(description))
+                  : DefaultButton(
+                      backgroundColor: kPrimaryColor,
+                      text: 'COPY',
+                      onPressed: () {
+                        FlutterClipboard.copy(description);
+                        _sqlController.addItemToCopiedList(id);
+                      },
+                    ),
+            ),
           ),
         ),
       ],
