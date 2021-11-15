@@ -3,9 +3,11 @@
 ## Kullandığım paketler
 
 * [Get](https://pub.dev/packages/get) (Route&state managment)
+* [flutter_svg](https://pub.dev/packages/flutter_svg) (Svg gösterimi)
+* [carousel_slider](https://pub.dev/packages/carousel_slider) (Welcome sayfası slider gösterimi)
+* [http](https://pub.dev/packages/http) (Api bağlantısı)
 * [string_validator](https://pub.dev/packages/string_validator) (Url doğrulaması)
 * [fluttertoast](https://pub.dev/packages/fluttertoast) (Toast mesajı)
-* [http](https://pub.dev/packages/http) (Api bağlantısı)
 * [sqflite](https://pub.dev/packages/sqflite) (Veritabanı)
 * [clipboard](https://pub.dev/packages/clipboard) (Bağlantı kopyalama)
 
