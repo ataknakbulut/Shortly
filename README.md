@@ -14,8 +14,12 @@ Kullandığım paketler
 
 
 Apk dosyası
-* [app-release.apk](https://github.com/fluttertests/grisoft_code_challange/blob/main/app-release.apk) 
+* [app-release.apk](https://github.com/fluttertests/grisoft_code_challange/blob/main/demo/app-release.apk) 
 
 Uygulama önizlemesi
-
+![01](demo/1.png)
+![02](demo/2.png)
+![03](demo/3.png)
+![04](demo/4.png)
+![05](demo/5.png)
 
