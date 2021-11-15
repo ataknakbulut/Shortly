@@ -14,7 +14,6 @@ class SqlController extends GetxController {
 
   void deleteItem(int id) async {
     await SQLHelper.deleteItem(id);
-    print('Successfully deleted a journal!');
     _refreshJournals();
   }
 
