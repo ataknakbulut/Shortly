@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:grisoft_code_challange/const.dart';
 import 'package:grisoft_code_challange/controller/home_controller.dart';
 import 'package:grisoft_code_challange/services.dart';
-import 'package:grisoft_code_challange/view/components/default_button.dart';
+import 'package:grisoft_code_challange/view/component/default_button.dart';
 import 'package:string_validator/string_validator.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 

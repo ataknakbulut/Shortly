@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:grisoft_code_challange/const.dart';
-import 'package:grisoft_code_challange/view/components/default_button.dart';
-import 'package:grisoft_code_challange/view/info.dart';
+import 'package:grisoft_code_challange/view/component/default_button.dart';
+import 'package:grisoft_code_challange/view/screen/info.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Wellcome extends StatelessWidget {

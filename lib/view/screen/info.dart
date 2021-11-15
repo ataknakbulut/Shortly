@@ -4,10 +4,10 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:grisoft_code_challange/const.dart';
 import 'package:grisoft_code_challange/controller/info_controller.dart';
-import 'package:grisoft_code_challange/view/home.dart';
-import 'package:grisoft_code_challange/view/components/bullet_active.dart';
-import 'package:grisoft_code_challange/view/components/bullet_passive.dart';
-import 'package:grisoft_code_challange/view/components/info_slide_item.dart';
+import 'package:grisoft_code_challange/view/screen/home.dart';
+import 'package:grisoft_code_challange/view/component/bullet_active.dart';
+import 'package:grisoft_code_challange/view/component/bullet_passive.dart';
+import 'package:grisoft_code_challange/view/component/info_slide_item.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 class Info extends StatelessWidget {

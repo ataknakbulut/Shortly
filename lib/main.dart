@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:grisoft_code_challange/view/wellcome.dart';
+import 'package:grisoft_code_challange/view/screen/wellcome.dart';
 
 void main() {
   runApp(const MyApp());

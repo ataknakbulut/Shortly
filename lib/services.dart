@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:grisoft_code_challange/const.dart';
-import 'package:grisoft_code_challange/controller/api_model.dart';
+import 'package:grisoft_code_challange/model/api_model.dart';
 import 'package:http/http.dart' as http;
 
 class Services {
