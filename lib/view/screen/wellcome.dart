@@ -30,7 +30,8 @@ class Wellcome extends StatelessWidget {
               ),
             ),
             Container(
-              padding: const EdgeInsets.only(bottom: 24.0),
+              padding:
+                  const EdgeInsets.only(bottom: 24.0, left: 12.0, right: 12.0),
               child: const Text(
                 'Build your brand\'s recognition and get detailed insights on how your links are performing',
                 style: TextStyle(
