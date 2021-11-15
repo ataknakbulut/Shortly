@@ -41,4 +41,4 @@ Tekrarlanan arayüz widgetları tek classdan
 
 Daha sonra uygulamanın arayüzünü design klasörü ve demo videosuna göre kodlamaya başladım. Buton, slider widget'ı gibi birden fazla kez kullanılacak widgetları [view/component](https://github.com/fluttertests/grisoft_code_challange/tree/main/lib/view/component) klasöründe sakladım.
 
-Arayüz tamamlandıktan sonra butonlara işlevler atamaya başladım.
+Arayüz tamamlandıktan sonra butonlara işlevler atamaya başladım. Veritabanı ve api bağlantısını kurdum.
