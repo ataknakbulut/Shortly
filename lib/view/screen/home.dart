@@ -68,8 +68,6 @@ class Home extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Text("Favorites"),
-                                  Text(_sqlController.favorites.toString()),
                                   ListView.builder(
                                     shrinkWrap: true,
                                     physics:
