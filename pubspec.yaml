@@ -37,6 +37,8 @@ dependencies:
   get: ^4.3.8
   string_validator: ^0.3.0
   fluttertoast: ^8.0.8
+  http: ^0.13.4
+  sqflite: ^2.0.0+4
 
 dev_dependencies:
   flutter_test:
