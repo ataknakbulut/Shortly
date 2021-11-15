@@ -1,7 +1,7 @@
-# grisoft_code_challange
- 
+# Shortly
 
-Kullandığım paketler
+
+## Kullandığım paketler
 
 
 * [Get](https://pub.dev/packages/get) (Route&state managment için Get paketini kullandım.)
@@ -12,11 +12,13 @@ Kullandığım paketler
 * [sqflite](https://pub.dev/packages/sqflite) (Veritabanı)
 * [clipboard](https://pub.dev/packages/clipboard) (Veritabanı)
 
+## Apk dosyası
 
-Apk dosyası
+
 * [app-release.apk](https://github.com/fluttertests/grisoft_code_challange/blob/main/demo/app-release.apk) 
 
-Uygulama önizlemesi
+## Uygulama önizlemesi
+
 <p float="left">
   <img src="demo/1.png" width="100" />
   <img src="demo/2.png" width="100" />
