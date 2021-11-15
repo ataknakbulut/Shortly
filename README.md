@@ -12,3 +12,10 @@ Kullandığım paketler
 * [sqflite](https://pub.dev/packages/sqflite) (Veritabanı)
 * [clipboard](https://pub.dev/packages/clipboard) (Veritabanı)
 
+
+Apk dosyası
+* [app-release.apk](https://github.com/fluttertests/grisoft_code_challange/blob/main/app-release.apk) 
+
+Uygulama önizlemesi
+
+
