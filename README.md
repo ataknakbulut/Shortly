@@ -33,12 +33,3 @@ Flutter svg paketi
 Getx route management
 Slider
 Tekrarlanan arayüz widgetları tek classdan
-
-
-
-## Uygulamanın hazırlanışı
-İlk iş olarak uygulamada kullanılacak olan görselleri [assets](https://github.com/fluttertests/grisoft_code_challange/tree/main/assets) klasörüne yükleyip [pubspec.yaml](https://github.com/fluttertests/grisoft_code_challange/blob/main/pubspec.yaml) dosyasından assets klasörüne erişim izni verdim.
-
-Daha sonra uygulamanın arayüzünü design klasörü ve demo videosuna göre kodlamaya başladım. Buton, slider widget'ı gibi birden fazla kez kullanılacak widgetları [view/component](https://github.com/fluttertests/grisoft_code_challange/tree/main/lib/view/component) klasöründe sakladım.
-
-Arayüz tamamlandıktan sonra butonlara işlevler atamaya başladım. Veritabanı ve api bağlantısını kurdum.
