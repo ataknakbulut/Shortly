@@ -24,12 +24,3 @@
   <img src="demo/4.png" width="100" />
   <img src="demo/5.png" width="100" />
 </p>
-
-
-
-Assets erişim
-Const asset yolları, tek seferde tekrar erişim
-Flutter svg paketi
-Getx route management
-Slider
-Tekrarlanan arayüz widgetları tek classdan
