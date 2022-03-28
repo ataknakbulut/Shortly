@@ -1,5 +1,11 @@
 # Shortly
 
+## İstenen uygulama tasarımı:
+
+<video src='demo/istek_video.m4v' width=180/>
+
+
+
 ## Kullandığım paketler
 
 * [Get](https://pub.dev/packages/get) (Route&state managment)
