@@ -1,7 +1,7 @@
 # Shortly
 
 
-* [İstenen uygulama tasarımı](demo/istek_video.m4v) 
+* [İstenen uygulama tasarımı (video)](demo/istek_video.m4v) 
 
 
 ## Kullandığım paketler
