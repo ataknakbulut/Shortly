@@ -1,9 +1,7 @@
 # Shortly
 
-## İstenen uygulama tasarımı:
 
-<video src='demo/istek_video.m4v' width=180/>
-
+* [İstenen uygulama tasarımı](demo/istek_video.m4v) 
 
 
 ## Kullandığım paketler
